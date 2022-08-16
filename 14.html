@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task14</title>
+</head>
+<body>
+<script>
+var colors=["Yellow","Blue","Green","Black","White"]
+alert("Colors in your array are : \n"+colors.join("\n"))
+colors.unshift(prompt("What color you want to add in beginning of an array ?"))
+alert("Colors in your updated array are : \n"+colors.join("\n"))
+colors.push(prompt("What color you want to add in end of an array ?"))
+alert("Colors in your updated array are : \n"+colors.join("\n"))
+colors.unshift(prompt("Add two more colors in beginning of an array: \nAdd first one ?"))
+colors.unshift(prompt("Add another one ?"))
+alert("Colors in your updated array are : \n"+colors.join("\n"))
+colors.shift()
+alert("Colors in your updated array after deleting first element are : \n"+colors.join("\n"))
+colors.pop()
+alert("Colors in your updated array after deleting last element are : \n"+colors.join("\n"))
+colors.splice(prompt("At which index you want to add color ?"),0,prompt("What color you want to add?"))
+alert("Colors in your updated array are : \n"+colors.join("\n"))
+colors.splice(prompt("From which index you want to delete color(s) ?"),prompt("How many color(s) you want to delete ?"))
+alert("Colors in your updated array are : \n"+colors.join("\n"))
+</script>
+</body>
+</html>
